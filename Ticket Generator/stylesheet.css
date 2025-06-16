@@ -1,0 +1,164 @@
+body {
+    font-family: sans-serif;
+    background-image:url(../wallhaven-oxyl99.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1920px 1080px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    border-color: transparent;
+    margin: 100px 90px;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 60px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0,0,0,1.5);
+    width: 300px;
+    border-color: white;
+
+}
+
+input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgb(197, 185, 185);
+    backdrop-filter: blur(10px);
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: #f8d7da;
+}
+
+label {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+button.hover{
+    background-color: aquamarine;
+}
+.message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+button {
+    width: 106%;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.ticket {
+    background-color: #ffffff;
+    border: 2px dashed #4caf50;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    animation: fadeIn 0.5s ease-in-out;
+}
+.ticket h2 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.ticket-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.ticket-text p {
+    margin: 6px 0;
+    font-size: 1em;
+}
+
+.ticket-image-container {
+    flex-shrink: 0;
+}
+
+.ticket-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+  /* Animación suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    body {
+    margin: 30px 15px;
+    background-size: cover;
+    height: auto;
+    }
+
+    form {
+    width: 100%;
+    padding: 20px;
+    }
+
+    .ticket {
+    width: 100%;
+    padding: 15px;
+    }
+
+    .ticket-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+    .ticket-image {
+    width: 80px;
+    height: 80px;
+    }
+
+    button {
+    width: 100%;
+    }
+}

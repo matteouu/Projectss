@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Generator</title>
+    <link rel="stylesheet" href="../ticket generator/stylesheet.css">
+</head>
+<body>
+    <h1 style="color: white;">Generate you ticket here!</h1>
+    <form id="ResgistroForm">
+        <div id="ticket" style="display: none;" class="ticket">
+            <h2>🎫 Entrada para la Conferencia</h2>
+            <div class="ticket-content">
+            <div class="ticket-text">
+                <p><strong>Nombre:</strong> <span id="ticket-nombre"></span></p>
+                <p><strong>Correo:</strong> <span id="ticket-correo"></span></p>
+                <p><strong>GitHub:</strong> <span id="ticket-github"></span></p>
+            </div>
+            <div class="ticket-image-container">
+                <img id="ticket-imagen" alt="Tu imagen" class="ticket-image">
+            </div>
+            </div>
+    </div>
+        <label for="name">Register</label>
+    <input type="text" id="Nombre" placeholder="Nombre" required>
+    <input type="email" id="Correo" placeholder="Correo electronico" required>
+    <input type="text" id="GitHub" placeholder="GitHubUsername" required>
+    <input type="file" id="image" accept="image" required>
+    <button type="submit">Generate my ticket</button>
+    <div id="mensaje" class="message" style="display: none;"></div>
+</form>
+
+    <script src="../ticket generator/ticket.js"></script>
+</body>
+</html>
+<!-- fwfw-->
